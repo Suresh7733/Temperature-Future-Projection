@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style2.css') }}">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{{url_for('static',filename='scripts/script.js')}}"></script>
+    <title>Project
+    </title>
+    <div id="iframe">
+    <iframe src="{{ url_for('static', filename='plots.pdf') }}" width="100%" height="100%"></iframe>
+    </div>
+    <div class="maindiv">
+    <ul>
+        <li><a href="{{ url_for('download_csv1') }}">Download FutureProjection 2021-2060</a></li>
+        <li><a href="{{ url_for('download_csv2') }}">Download FutureProjection 2061-2100</a></li>
+        <li><form action ="/Resubmit" method = "post">
+            <button type="submit" id="sub">Resubmit</button>
+        <form></li>
+    </ul>
+</div>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,60 @@
+body {
+   background-color:#969b9a ;
+  }
+
+  input[type="text"] {
+    width: 200px;
+    height: 30px;
+    }
+  .button{
+    /* padding:15px 32px; */
+    text-align: center;
+    text-decoration: none;
+    display:inline-block;
+    font-size:30px;
+    cursor: pointer;
+  }
+
+  .maindiv{
+    margin-left:28rem;
+    position: absolute;
+    width:38rem;
+    height:100%;
+    top: 50%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+    background-color: #969b9a;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  #map {
+    height: 733px;
+    width: 61%;
+    /* padding:1rem; */
+    padding-left:0.5rem;
+    /* padding-top:0.5rem; */
+
+  }
+  #errordiv{
+    color:red;
+  }
+  .logo{
+    margin-top: 8rem;
+    height:12rem;
+    width:10rem;
+    
+  
+  }
+
+ .box{
+  font-size:20px;
+ }
+  #buttons{
+    font-weight: 100;
+    margin-left: 5rem;
+    word-spacing: 0.8rem;
+  }

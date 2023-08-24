@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Project</title>
+</head>
+<body>
+    <div id="map">
+  
+    </div>
+    <div id="coordinates"></div>
+    <div class="maindiv">
+        <div >
+            <h1>Expert System for Downscaling Daily Maximum Temperature Over India</h1>
+            
+        <div class="box">
+        <div id="errordiv">
+        {% if error_message %}
+        <p>{{ error_message }}</p>
+      {% endif %}
+      </div>
+         <form method="POST" action="/form-handler">
+
+            <form action="/form-handler" method="POST">
+                <label for="lat">Enter Latitude  :</label>
+                <input type='text' id="lat" name="lat" placeholder="In decimal degree"><br>
+              <br>
+                <label for="lon" >Enter Longitude:</label>
+                <input type="text" id="lon" name="lon" placeholder="In decimal degree">
+                <!-- <select>
+                  <option>Select an option:</option>
+                  <option>Max Temperature</option>
+                  <option>Min Temperature</option>
+                </select> -->
+              <br><br>
+              <h7>Or</h7>
+              <br>
+              <h7>Select a point on the map</h7>
+              <br><br>
+
+              <div class="button">
+                <input type="submit" value="Submit">
+                <button id="reset" type="reset">Reset</button>
+            </div>
+          </div>
+              
+             <img class='logo' src="static\data\Logo white.png">
+            </div>
+            
+        </div>
+        
+    </div>
+</div>
+
+<script src="https://js.api.here.com/v3/3.1/mapsjs-core.js">          </script>
+<script src="https://js.api.here.com/v3/3.1/mapsjs-service.js">       </script>
+<script src="https://js.api.here.com/v3/3.1/mapsjs-ui.js">            </script>
+ <script src="https://js.api.here.com/v3/3.1/mapsjs-mapevents.js">    </script>
+ <script  src="{{ url_for('static', filename='scripts/script1.js') }}"> </script>
+</body>
+</html>
